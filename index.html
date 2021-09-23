@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Player</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <!--CSS grid with the following fractions-->
+            <!--column: 1fr 9fr 4fr-->
+            <!--row: 1 7.3 5.2 -->
+            <div id="navbar-left">
+                1 Left nav-bar with icons go here
+                <!-- <header>
+                    <ul class="media-controls">
+                        <li class="fas fa-play play"></li>
+                        <li class="fas fa-stop stop"></li>
+                        <li class="fas fa-backward rewind"></li>
+                        <li class="fas fa-forward forward"></li>
+                        <li class="fas fa-volume-down"></li>
+                        <li class="fas fa-volume-up"></li>
+                        <li class="fas fa-volume-mute mute"></li>
+                    </ul>
+                </header> -->
+            </div> 
+            <div id="search-bar">2 Video search bar goes here</div>
+            <div id="log-in">3 User Icon & Notification goes here</div>
+            <div id="vid-player">
+                <video src="videos/skateboard2.mp4" controls></video>
+                <div class="controls">
+                    <button class="play fas fa-play"></button>
+                    <button class="stop fas fa-stop"></button>
+                    <button class="vol-down fas fa-volume-down"></button>
+                    <button class="vol-up fas fa-volume-up"></button>
+                    <button class="rwd fas fa-backward"></button>
+                    <button class="fwd fas fa-forward"></button>
+                </div>
+            </div>
+            <div id="related-vids">
+                <h2 class="headers">Popular Videos</h2>
+                <div class="video-list">
+                    <div class="video-thumbnail" onclick="switchVid('videos/skateboard1.mp4')">
+                        <img src="images/skate1_thumb.JPG" alt="">
+                        <div class="video-details">
+                            <h4 class="headers">Olie flip in slow-mo</h4>
+                            <p class="uploader-name">Arwin Goo</p>
+                            <p class="views">125,982 views <span>&#8226;</span> 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail" onclick="switchVid('videos/guitar.mp4')">
+                        <img src="images/guitar_thumnail.JPG" alt="">
+                        <div class="video-details">
+                            <h4 class="headers">Flamenco Tune</h4>
+                            <p class="uploader-name">Arwin Goo</p>
+                            <p class="views">125,982 views <span>&#8226;</span> 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail" onclick="switchVid('videos/tennis.mp4')">
+                        <img src="images/tennis_thumb.JPG" alt="">
+                        <div class="video-details">
+                            <h4 class="headers">Tennis backhand</h4>
+                            <p class="uploader-name">Arwin Goo</p>
+                            <p class="views">125,982 views <span>&#8226;</span> 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail" onclick="switchVid('videos/skateboard2.mp4')">
+                        <img src="images/skate2_thumb.JPG" alt="">
+                        <div class="video-details">
+                            <h4 class="headers">Skateboard Grind</h4>
+                            <p class="uploader-name">Arwin Goo</p>
+                            <p class="views">125,982 views <span>&#8226;</span> 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="vid-desc">6 Video description goes here</div> 
+            <!-- <div id="chat-box">7</div> -->
+            <script type="text/javascript" src="script.js"></script>
+        </div>
+    </body>
+</html>

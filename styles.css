@@ -1,0 +1,164 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    font-family: sans-serif;
+}
+
+/* global styling */
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    /* border: 10px solid black; */
+    display: grid;
+    grid-template-columns: 0.9fr 9fr 4fr;
+    grid-template-rows: 1fr 7.3fr 5.2fr;
+    grid-column-gap: 1rem; 
+    background-color: #1F1D2B;
+    /* grid-row-gap: 1rem;  */
+}
+
+div {
+    font-size: 20px;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.headers {
+    color: white;
+}
+
+.subtitles, p {
+    color: #666;
+}
+
+#navbar-left, #related-vids, #vid-player {
+    background-color: #1F1D2B;
+}
+
+/* nav-bar */
+#navbar-left {
+    grid-row: span 3;
+    background: #1F1D2B;
+    border-right: 0.5px solid #666;
+}
+
+
+#search-bar {
+    /* background: darkblue; */
+}
+
+#log-in {
+    /* background: darkcyan; */
+}
+
+/* video player section */
+
+video {
+    width: 100%;
+    border-radius: 1.3em;
+}
+
+img {
+    width: 180px;
+    height: 150px;
+    border-radius: 1.3em;
+}
+
+.controls {
+    visibility: hidden;
+    opacity: 0.5;
+    width: 700px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 280px;
+    left: 200px;
+    box-shadow: 3px 3px 5px black;
+    transition: 1s all;
+    display: flex;
+}
+
+button, .controls {
+    background: linear-gradient(to bottom,#222,#666);
+}
+
+#vid-player:hover .controls, #vid-player:focus .controls {
+    opacity: 1;
+}
+
+button {
+    font-size: 20px;
+    height: 40px;
+    color: #aaa;
+    text-shadow: 1px 1px 0px black;
+    line-height: 20px;
+    border:0;
+    flex: 1;
+}
+
+.play {
+    border-radius: 10px 0 0 10px;
+}
+
+.fwd {
+    border-radius: 0 10px 10px 0;
+}
+
+button:hover {
+    box-shadow: inset 1px 1px 2px black;
+}
+
+button:active {
+    box-shadow: inset 3px 3px 2px black;
+}
+
+/*end of video player styling */
+
+#vid-desc {
+    /* background: rgba(135, 207, 132, 0.3); */
+}
+
+/* #chat-box {
+    background: rosybrown;
+} */
+
+/* related videos section */
+
+#related-vids {
+    grid-row: span 3;
+}
+
+#related-vids h2 {
+    margin: 10px;
+}
+
+.video-list > * {
+    margin: 10px;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-thumbnail {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+}
+
+.video-details *  {
+    margin: 10px;
+}
+
+.views {
+    font-size: 13px;
+}
